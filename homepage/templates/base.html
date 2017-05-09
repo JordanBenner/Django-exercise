@@ -1,0 +1,22 @@
+<!DOCTYPE html>{% load static %}
+
+<html>
+<head>
+  <title>{% block title %} Hello world{% endblock %}</title>
+    <link rel='stylesheet' href="{% static 'main.css' %}">
+</head>
+
+<body class='parallax'>
+<h1>Puddy tat</h1>
+  {% block content %}
+
+  <img src='{% static "cat.jpg" %}' alt='cat'/>
+<header>
+  <ul>
+    <li><a href='https://github.com/JordanBenner'>Github</a></li>
+  </ul>
+</header>
+
+  {% endblock %}
+</body>
+</html>
