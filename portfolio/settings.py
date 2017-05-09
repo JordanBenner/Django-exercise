@@ -28,7 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     "108.61.241.53",
     "localhost",
-    ""
+    "cat.jordan-benner.com"
 
 ]
 
