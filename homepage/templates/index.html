@@ -1,2 +1,15 @@
-{% extends "base.html" %}{% load static %}
-{% block title %}Home Page{% endblock %}
+<!DOCTYPE html> {% load static %}
+
+<html>
+    <head>
+        <title>
+            {% block title %}Default{% endblock %}
+        </title>
+        <link rel="stylesheet" href="{% static "main.css" %}" type="text/css">
+    </head>
+    <body>
+        <h1>Header</h1>
+        {% block content %} {% endblock %}
+        <h1>Footer</h1>
+    </body>
+</html>
